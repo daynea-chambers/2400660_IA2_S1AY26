@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <header>
+        <div id="head">
+            <a href="index.html">
+                <img src="/Assets/Logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="products.html">View Products</a></li>
+                </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    <section id="introduction">
+      <h1>Login</h1>
+        <p>Your one-stop shop for your mental well-being!</p> 
+    </section>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login">
+            <div id="username">
+                <label for="username">Username:</label>
+                <input type="text" id="p-username" name="username" required>
+            </div>
+            <div id="password">
+                <label for="password">Password:</label>
+                <input type="password" id="p-password" name="password" required>
+            </div>
+            <button id="sub" type="submit" onclick=Login()>Login</button>
+            <p>Don't have an account? <a href="registration.html">Register</a></p>
+        </form>
+    </div>
+<footer>
+        <p>&copy; 2025 Inked Thoughts Company. All rights reserved.</p>
+    </footer>
+        <script src="script.js"></script>
+</body>
+</html>
