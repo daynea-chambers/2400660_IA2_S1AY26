@@ -6,21 +6,7 @@
  - Implements a simple shopping cart stored in localStorage
  - Renders a cart table on `cart.html` and a checkout summary on `checkout.html`
 
- Data shape (localStorage):
- - users: Array of { username, email, password }
- - cart: Array of cart item objects: { name: string, price: number, qty: number, size: string }
- - shipping: Array of { name, address, price }
-
- Notes for users/contributors:
- - Add-to-cart buttons add objects to `localStorage.cart`; `renderCart()` reads this and builds the table.
- - The cart page renders interactive controls: quantity input and size select per row. Changes are persisted immediately.
- - Checkout reads the `cart` from localStorage and uses the sizes/quantities currently stored.
- - Sizes are treated as strings (Small/Medium/Large) and do not change price in this implementation.
-
- Editing guide:
- - To change available sizes, update the `sizes` array inside `renderCart()`.
- - To centralize add-to-cart behavior, replace the multiple AddtoCartX functions with a single helper and pass product data.
-*/
+ */
 
 /*Registration Page*/
 function Register() {
@@ -712,5 +698,6 @@ function Confirm() {
     alert("Your payment has been processed");
     alert("Thank you for shopping with us!")
 }
+
 
 
