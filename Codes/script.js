@@ -93,8 +93,8 @@ function Logout()
 
 //This function ensures that only registered users are allowed to shop
 function requireLogin() {
-  const currentPage = window.location.pathname;
-  const publicPages = ["login.html", "aboutus.html", "index.html","registration.html"];
+  const currentPage = window.location.pathname.replace("/","");
+  const publicPages = ["login", "aboutus", "index","registration"];
 
   if (publicPages.some(page => currentPage.includes(page))) return;
 
@@ -642,4 +642,5 @@ function Confirm() {
     alert("Your payment has been processed");
     alert("Thank you for shopping with us!")
 }
+
 
