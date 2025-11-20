@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="../styles.css">
+    <header>
+        <div id="head">
+            <a href="index.html">
+                <img src="../Assets/Logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="products.html">View Products</a></li>
+                    <li><a href="cart.html">View Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="#" onclick=Logout()>Logout</a></li>
+                </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    <section id="introduction">
+      <h1>Inked Thoughts</h1>
+        <p>Your one-stop shop for your mental well-being!</p> 
+    </section>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../Assets/FJournal.jpg" width="100%" id="MainImg" alt="Personalized Journal">
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / Journals</h6>
+            <h3 id="floral">Floral Journal</h3>
+            <h5 id="floralp">$12.99</h5>
+            <select id="florals">
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+            <input id="fnumber" type="number" value="1">
+            <button class="add-to-cart" onclick=AddtoCart1()>Add to Cart</button>
+            <button class="remove-from-cart" onclick=RemovefromCart1()>Remove from Cart</button>
+            <h3>Product Details</h3>
+            <span>Our Floral Journal features a beautiful floral cover design, perfect for nature lovers. Its high-quality paper is ideal for writing, sketching, or planning your day.</span>
+
+        </div>
+    </section>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../Assets/WJournal.jpg" width="100%" id="MainImg" alt="Personalized Journal">
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / Journals</h6>
+            <h3 id="wellness">Wellness Journal</h3>
+            <h5 id="wellnessp">$19.99</h5>
+            <select id="wellnesss">
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+            <input id="wnumber" type="number" value="1">
+            <button class="add-to-cart" onclick=AddtoCart2()>Add to Cart</button>
+            <button class="remove-from-cart" onclick=RemovefromCart2()>Remove from Cart</button>
+            <h3>Product Details</h3>
+            <span>Our Wellness Journal is designed to help you track your mental and physical well-being. With prompts and exercises, it encourages mindfulness and self-care practices.</span>
+        </div>
+    </section>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../Assets/MJournal.jpg" width="100%" id="MainImg" alt="Minimalist Journal">
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / Journals</h6>
+            <h3 id="minimalist">Minimalist Journal</h3>
+            <h5 id="minimalistp">$9.99</h5>
+            <select id="minimalists">
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+            <input id="mnumber" type="number" value="1">
+            <button class="add-to-cart" onclick=AddtoCart3()>Add to Cart</button>
+            <button class="remove-from-cart" onclick=RemovefromCart3()>Remove from Cart</button>
+
+            <h3>Product Details</h3>
+            <span>Our Minimalist Journal features a clean and simple design, perfect for those who appreciate elegance in simplicity. Its high-quality paper is ideal for writing, sketching, or planning your day.</span>
+        </div>
+    </section>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../Assets/AJournal.jpg" width="100%" id="MainImg" alt="Personalized Journal">
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / Journals</h6>
+            <h3 id="artistic">Artisitic Journal</h3>
+            <h5 id="artisticp">$14.99</h5>
+            <select id="artistics">
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+            <input id="anumber" type="number" value="1">
+            <button class="add-to-cart" onclick=AddtoCart4()>Add to Cart</button>
+            <button class="remove-from-cart" onclick=RemovefromCart4()>Remove from Cart</button>
+            <h3>Product Details</h3>
+            <span>Our Artisitic Journal features a beautifully designed cover that sparks creativity and inspiration. Ideal for artists and writers alike to capture their ideas and sketches.</span>
+        </div>
+    </section>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../Assets/TJournal.jpg" width="100%" id="MainImg" alt="Personalized Journal">
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / Journals</h6>
+            <h3 id="travel">Travel Journal</h3>
+            <h5 id="travelp">$15.99</h5>
+            <select id="travels">
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+            <input id="tnumber" type="number" value="1">
+            <button class="add-to-cart" onclick=AddtoCart5()>Add to Cart</button>
+            <button class="remove-from-cart" onclick=RemovefromCart5()>Remove from Cart</button>
+            <h3>Product Details</h3>
+            <span>Our Travel Journal is designed for adventurers and explorers. With durable pages and a sturdy cover, it's perfect for documenting your journeys, experiences, and memories on the go.</span>
+        </div>
+    </section>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../Assets/PJournal.avif" width="100%" id="MainImg" alt="Personalized Journal">
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / Journals</h6>
+            <h3 id="personalized">Personalized Journal</h3>
+            <h5 id="personalizedp">$20.99</h5>
+            <select id="personalizeds">
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+            <input id="pnumber" type="number" value="1">
+            <button class="add-to-cart" onclick=AddtoCart6()>Add to Cart</button>
+            <button class="remove-from-cart" onclick=RemovefromCart6()>Remove from Cart</button>
+            <h3>Product Details</h3>
+            <span>Our Personalized Journal allows you to customize the cover with your name or a special message, making it uniquely yours. Perfect for jotting down your thoughts, ideas, and reflections.</span>
+        </div>
+    </section>
+
+<footer>
+        <p>&copy; 2025 Inked Thoughts Company. All rights reserved.</p>
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>
